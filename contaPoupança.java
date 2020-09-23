@@ -14,7 +14,8 @@ public class contaPoupança extends ContaBancaria{
         if(dia == this.diaRendimento){
             double novoSaldo = getSaldo()*1.05;
             setSaldo(novoSaldo);
-        }
+        }else{
+         System.out.println("A poupança ainda não rendeu este mes, o saldo continua de:" + " " + getSaldo());   
     }
 
 }
